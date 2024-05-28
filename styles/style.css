@@ -9,6 +9,9 @@ html {
 }
 
 .page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -35,4 +38,157 @@ fieldset {
 ul,
 ol {
   list-style: none;
+}
+
+.visually-hidden {
+  position: absolute;
+  inline-size: 1px;
+  block-size: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
+.content {
+  display: flex;
+  align-items: end;
+  inline-size: 100%;
+  gap: 30px;
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  width: 100%;
+}
+
+.content__list {
+  overflow: scroll;
+  overflow-x: hidden; /*not in the task, just don't like how the horizontal scroll looks at all*/
+  block-size: 298px;
+  position: relative;
+}
+
+.content__details {
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+ }
+
+ .result__video-container {
+  inline-size: 711px;
+  block-size: 386px;
+  margin-bottom: 16px;
+  position: relative;
+ }
+
+ .result__video {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  height: 100%;
+ }
+
+ .content__list-item:not(:last-child) {
+  padding: 0 0 30px 0px;
+ }
+
+ .content__video-card {
+  display: flex;
+  align-items: start;
+ }
+
+ .content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: contain;
+  object-position: center;
+ }
+
+ .content__video-card-description-container {
+  flex: 1;
+ }
+
+ .title {
+  color: #FFF;
+  font-family: Oswald;
+  font-size: 75px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 94%;
+  text-transform: uppercase;
+  margin-bottom: 26px;
+ }
+
+ .content__accent {
+  color: #545050;
+ }
+
+ .content__video-card-title {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 100%;
+  padding: 2px 0px 6px 2px;
+ }
+
+ .search-form__fieldset-title {
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: normal;
+  margin-bottom: 5px;
+ }
+
+ .content__card-link {
+  text-decoration: none;
+  color: #FFF;
+ }
+
+ .content__video-card-description {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16.2px;
+ }
+
+ fieldset {
+  border: none;
+ }
+
+ .search-form__label {
+  display: flex;
+  width: fit-content;
+ }
+
+ .search-form__checkbox-list {
+  display: flex;
+  gap: 15px;
+ }
+
+ input {
+  background-color: transparent;
+  font: inherit;
+  border: none;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
+  appearance: none;
+ }
+
+.search-form__pseudo-checkbox {
+  display: block;
+  width: 19px;
+  height: 19px;
+  border: 1px solid #fff;
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.button {
+  cursor: pointer;
+}
+
+.search-form__submit-button {
+  
 }
