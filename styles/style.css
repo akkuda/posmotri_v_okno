@@ -145,6 +145,8 @@ ol {
  .content__card-link {
   text-decoration: none;
   color: #FFF;
+  display: block;
+  margin: 2px;
  }
 
  .content__video-card-description {
@@ -182,8 +184,16 @@ input[type="text"]:focus {
   outline: none;
 }
 
+input:focus {
+  outline: none;
+}
+
 input:active {
   border: 1px solid #fff;
+  outline: none;
+}
+
+.search-form__label:focus {
   outline: none;
 }
 
@@ -211,8 +221,20 @@ input:active {
   margin-left: 1px;
 }
 
+.search-form__checkbox:focus-visible {
+  border: 1px solid #fff;
+}
+
+.search-form__checkbox-list:hover {
+  text-decoration: underline;
+}
+
 .button {
   cursor: pointer;
+}
+
+button:focus {
+  outline: none;
 }
 
 .search-form__submit-button {
@@ -226,6 +248,19 @@ input:active {
   padding: 6px 73.5px;
 }
 
+.search-form__submit-button:active {
+  background-color:#545050;
+}
+
+.search-form__submit-button:hover {
+  text-decoration: underline;
+}
+
+.search-form__submit-button:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 2px;
+}
+
 .more-button {
   width: 100%;
   align-self: flex-end;
@@ -236,4 +271,19 @@ input:active {
   color: #fff;
   font-weight: 700;
   line-height: normal;
+}
+
+.content__card-link_current {
+  background-color: #545050;
+  padding: 2px;
+}
+
+.content__card-link_current:hover {
+  text-decoration: underline;
+}
+
+.content__card-link:focus-visible {
+  padding: 2px;
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
