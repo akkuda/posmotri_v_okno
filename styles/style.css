@@ -178,6 +178,7 @@ input[type="text"] {
   border-top: 1px solid #FFF;
   border-bottom: 1px solid #FFF;
   appearance: none;
+  outline: none;
  }
 
 input[type="text"]:focus {
@@ -189,8 +190,7 @@ input:focus {
 }
 
 input:active {
-  border: 1px solid #fff;
-  outline: none;
+  outline: 1px solid #fff;
 }
 
 .search-form__label:focus {
@@ -271,6 +271,14 @@ button:focus {
   color: #fff;
   font-weight: 700;
   line-height: normal;
+}
+
+.more-button:hover {
+  text-decoration: underline;
+}
+
+.more-button:active {
+  background-color:#545050;
 }
 
 .content__card-link_current {
